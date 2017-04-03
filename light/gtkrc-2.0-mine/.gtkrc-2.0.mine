@@ -1,0 +1,12 @@
+# Gvim borders workaround
+style "gvim" { 
+    bg[NORMAL] = "#1F1F1F" 
+} 
+widget "vim-main-window.*GtkForm" style "gvim" 
+
+style "no-resize-handle"
+{
+    GtkWindow::resize-grip-height = 0
+    GtkWindow::resize-grip-width = 0
+}
+class "GtkWidget" style "no-resize-handle" }

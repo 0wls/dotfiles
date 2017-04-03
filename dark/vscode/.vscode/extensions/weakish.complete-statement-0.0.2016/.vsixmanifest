@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="complete-statement" Version="0.0.2016" Publisher="weakish"/>
+    <DisplayName>Complete Statement</DisplayName>
+    <Description xml:space="preserve">complete statement for languages with a syntax similar to C</Description>
+    <Tags>completion,semicolon,c-syntax,intelliJ,keybindings</Tags>
+    <Categories>Other</Categories>
+    <GalleryFlags>Public Preview</GalleryFlags>
+    <Badges><Badge Link="https://opensource.org/licenses/FPL-1.0.0" ImgUri="https://img.shields.io/badge/license-0BSD-lightgrey.svg" Description="0BSD" /><Badge Link="http://www.typescriptlang.org/" ImgUri="https://img.shields.io/badge/TypeScript-1.8.10-blue.svg" Description="TypeScript" /></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.4.0" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/weakish/vscode-complete-statement.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/weakish/vscode-complete-statement.git" />
+        
+        <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/weakish/vscode-complete-statement.git" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/weakish/vscode-complete-statement/issues" />
+      
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+    </Properties>
+    <License>extension/LICENSE.txt</License>
+    <Icon>extension/vscode-complete-statement.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/vscode-complete-statement.png" Addressable="true" />
+  </Assets>
+</PackageManifest>

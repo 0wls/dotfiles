@@ -1,0 +1,209 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+;background = ${xrdb:color0:#222}
+background = #1f1f1f
+background-alt = #2c2c2c
+;foreground = ${xrdb:color7:#222}
+foreground = #dfdfdf
+foreground-alt = #a0a0a0
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+button = #787878
+
+[bar/example]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 98%
+height = 18
+offset-x = 1%
+offset-y = 1%
+;radius = 6.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+;line-size = 3
+line-color = #f00
+
+border-size = 2
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = "Gohu GohuFont:pixelsize=11;1"
+;font-0 = fixed:pixelsize=9;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = "Wuncon Siji:pixelsize=10;1"
+font-3 = "FontAwesome:pixelsize=14:0"
+
+
+modules-left = bspwm
+modules-center = 
+modules-right = weather pkg volume date
+
+tray-position = right
+tray-padding = 2
+;tray-transparent = true
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/weather]
+type = custom/script
+interval = 10
+format = <label>
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+exec = ~/.config/polybar/weather
+
+; 
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = 
+label-focused-foreground = ${colors.button}
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = 
+label-occupied-padding = 2
+label-occupied-foreground = ${colors.button}
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = 
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+
+
+[module/date]
+type = internal/date
+interval = 5
+
+
+date = " %d.%m.%Y"
+date-alt = " %d.%m.%Y"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+;format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #0a6cf5
+
+;label = %date% %time%
+label = %{F#666}%{F-} %date%  %{F#787878}%{F-} %time%
+
+;[module/volume]
+;type = internal/volume
+
+;format-volume = <label-volume> <bar-volume>
+;label-volume = vol
+;label-volume-foreground = ${root.foreground}
+
+;format-muted-prefix = " "
+;format-muted-foreground = ${colors.foreground-alt}
+;label-muted = muted
+
+;bar-volume-width = 10
+;bar-volume-foreground-0 = #55aa55
+;bar-volume-foreground-1 = #55aa55
+;bar-volume-foreground-2 = #55aa55
+;bar-volume-foreground-3 = #55aa55
+;bar-volume-foreground-4 = #55aa55
+;bar-volume-foreground-5 = #f5a70a
+;bar-volume-foreground-6 = #ff5555
+;bar-volume-gradient = false
+;bar-volume-indicator = |
+;bar-volume-indicator-font = 2
+;bar-volume-fill = ─
+;bar-volume-fill-font = 2
+;bar-volume-empty = ─
+;bar-volume-empty-font = 2
+;bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/volume]
+type = internal/volume
+
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+
+format-muted-prefix = " "
+format-muted-foreground = #66
+label-muted = sound muted
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-foreground = #787878
+
+
+[module/pkg]
+type = custom/script
+interval = 1200
+format = <label>
+format-underline = #dc322f
+label = "%output:0:30%"
+exec = .config/polybar/pkg.sh
+exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
+
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini

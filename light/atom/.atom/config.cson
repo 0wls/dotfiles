@@ -1,0 +1,30 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#8d8d8d"
+      accentColor: "#e33030"
+      predefinedColor: "Blue Grey"
+    fonts: {}
+    tabs:
+      compactTabs: true
+    treeView: {}
+    ui:
+      animations: false
+  "autocomplete-python":
+    showTooltips: true
+  core:
+    autoHideMenuBar: true
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax-light"
+    ]
+  editor:
+    tabLength: 4
+  "exception-reporting":
+    userId: "a491e771-087c-a6dd-2825-c84e597c4c09"
+  fonts:
+    fontFamily: "Gohufont 14"
+  "fuzzy-finder": {}
+  welcome:
+    showOnStartup: false
