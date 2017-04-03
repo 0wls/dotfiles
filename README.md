@@ -1,3 +1,3 @@
 # Home of dotfiles
 
-...more to be added
+...more to be added soon...
