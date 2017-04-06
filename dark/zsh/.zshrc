@@ -17,7 +17,7 @@ prompt minimal
 
 alias fr='free -h'
 alias jpy='exec /home/ff/Downloads/pycharm-5.0.2/bin/pycharm.sh %f &'
-alias vmstart='VBoxManage startvm'
+alias vm='VBoxManage startvm'
 alias darkunset='cd $HOME/dotfiles/dark; stow -D --target=$HOME *'
 alias darkset='cd $HOME/dotfiles/dark; stow  --target=$HOME *'
 alias lightunset='cd $HOME/dotfiles/light; stow -D --target=$HOME *'

@@ -25,6 +25,11 @@
             "label": "Ctrl+Shift+S",
             "isNative": true
         },
+        "workbench.action.openGlobalSettings": {
+            "id": "workbench.action.openGlobalSettings",
+            "label": "Ctrl+,",
+            "isNative": true
+        },
         "workbench.action.openGlobalKeybindings": {
             "id": "workbench.action.openGlobalKeybindings",
             "label": "Ctrl+K Ctrl+S",
@@ -47,7 +52,7 @@
         },
         "workbench.action.closeWindow": {
             "id": "workbench.action.closeWindow",
-            "label": "Ctrl+Shift+W",
+            "label": "Ctrl+W",
             "isNative": true
         },
         "workbench.action.closeFolder": {
@@ -193,11 +198,6 @@
         "workbench.view.search": {
             "id": "workbench.view.search",
             "label": "Ctrl+Shift+F",
-            "isNative": true
-        },
-        "workbench.view.git": {
-            "id": "workbench.view.git",
-            "label": "Ctrl+Shift+G",
             "isNative": true
         },
         "workbench.view.debug": {
@@ -364,6 +364,56 @@
             "id": "workbench.action.gotoLine",
             "label": "Ctrl+G",
             "isNative": true
+        },
+        "workbench.action.debug.start": {
+            "id": "workbench.action.debug.start",
+            "label": "F5",
+            "isNative": true
+        },
+        "workbench.action.debug.run": {
+            "id": "workbench.action.debug.run",
+            "label": "Ctrl+F5",
+            "isNative": true
+        },
+        "workbench.action.debug.stop": {
+            "id": "workbench.action.debug.stop",
+            "label": "Shift+F5",
+            "isNative": true
+        },
+        "workbench.action.debug.restart": {
+            "id": "workbench.action.debug.restart",
+            "label": "Ctrl+Shift+F5",
+            "isNative": true
+        },
+        "workbench.action.debug.stepOver": {
+            "id": "workbench.action.debug.stepOver",
+            "label": "F10",
+            "isNative": true
+        },
+        "workbench.action.debug.stepInto": {
+            "id": "workbench.action.debug.stepInto",
+            "label": "F11",
+            "isNative": true
+        },
+        "workbench.action.debug.stepOut": {
+            "id": "workbench.action.debug.stepOut",
+            "label": "Shift+F11",
+            "isNative": true
+        },
+        "workbench.action.debug.continue": {
+            "id": "workbench.action.debug.continue",
+            "label": "F5",
+            "isNative": true
+        },
+        "editor.debug.action.toggleBreakpoint": {
+            "id": "editor.debug.action.toggleBreakpoint",
+            "label": "F9",
+            "isNative": true
+        },
+        "editor.debug.action.toggleColumnBreakpoint": {
+            "id": "editor.debug.action.toggleColumnBreakpoint",
+            "label": "Shift+F9",
+            "isNative": true
         }
     },
     "theme": "vs-dark ms-vscode-Theme-MaterialKit-themes-Material-Theme-Darker-tmTheme",
@@ -391,5 +441,6 @@
         "folders": [
             "/home/ff/Documents/HeadFirst"
         ]
-    }
+    },
+    "telemetry.machineId": "506a00c0318adf66323e966032fb9c330f8101da265727b3e888495d4ef593b3"
 }
