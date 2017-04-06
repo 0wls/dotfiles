@@ -2,6 +2,9 @@
 # wm independent hotkeys
 #
 
+ctrl + alt + x	
+	pkill -f 'x11grab'
+
 #Reboot
 ctrl + alt + r
 	shutdown -r now
