@@ -430,9 +430,10 @@
             }
         }
     },
-    "pickerWorkingDir": "/home/ff/Documents",
+    "pickerWorkingDir": "/home/ff/dotfiles/dark/start_page/start_page",
     "openedPathsList": {
         "files": [
+            "/home/ff/dotfiles/dark/start_page/start_page/index.html",
             "/home/ff/.config/Code/User/snippets/javascript.json",
             "/home/ff/Documents/HeadFirst/1.html",
             "/home/ff/Documents/Web Bootcamp/boxes.css",
