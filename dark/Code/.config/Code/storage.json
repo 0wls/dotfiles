@@ -200,6 +200,11 @@
             "label": "Ctrl+Shift+F",
             "isNative": true
         },
+        "workbench.view.scm": {
+            "id": "workbench.view.scm",
+            "label": "Ctrl+Shift+G",
+            "isNative": true
+        },
         "workbench.view.debug": {
             "id": "workbench.view.debug",
             "label": "Ctrl+Shift+D",
@@ -360,6 +365,11 @@
             "label": "F12",
             "isNative": true
         },
+        "editor.action.goToImplementation": {
+            "id": "editor.action.goToImplementation",
+            "label": "Ctrl+F12",
+            "isNative": true
+        },
         "workbench.action.gotoLine": {
             "id": "workbench.action.gotoLine",
             "label": "Ctrl+G",
@@ -423,8 +433,8 @@
             "workspacePath": "/home/ff/Documents/HeadFirst",
             "uiState": {
                 "mode": 1,
-                "x": 14,
-                "y": 32,
+                "x": 12,
+                "y": 30,
                 "width": 1892,
                 "height": 1034
             }
@@ -443,5 +453,6 @@
             "/home/ff/Documents/HeadFirst"
         ]
     },
-    "telemetry.machineId": "506a00c0318adf66323e966032fb9c330f8101da265727b3e888495d4ef593b3"
+    "telemetry.machineId": "506a00c0318adf66323e966032fb9c330f8101da265727b3e888495d4ef593b3",
+    "themeBackground": "#212121"
 }
