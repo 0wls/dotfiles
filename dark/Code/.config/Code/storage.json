@@ -15,6 +15,11 @@
             "label": "Ctrl+Shift+T",
             "isNative": true
         },
+        "workbench.action.openRecent": {
+            "id": "workbench.action.openRecent",
+            "label": "Ctrl+R",
+            "isNative": true
+        },
         "workbench.action.files.save": {
             "id": "workbench.action.files.save",
             "label": "Ctrl+S",
@@ -52,7 +57,7 @@
         },
         "workbench.action.closeWindow": {
             "id": "workbench.action.closeWindow",
-            "label": "Ctrl+W",
+            "label": "Ctrl+Shift+W",
             "isNative": true
         },
         "workbench.action.closeFolder": {
@@ -424,20 +429,27 @@
             "id": "editor.debug.action.toggleColumnBreakpoint",
             "label": "Shift+F9",
             "isNative": true
+        },
+        "workbench.action.tasks.build": {
+            "id": "workbench.action.tasks.build",
+            "label": "Ctrl+Shift+B",
+            "isNative": true
         }
     },
     "theme": "vs-dark ms-vscode-Theme-MaterialKit-themes-Material-Theme-Darker-tmTheme",
     "windowsState": {
+        "openedWindows": [],
         "openedFolders": [],
         "lastActiveWindow": {
             "workspacePath": "/home/ff/Documents/HeadFirst",
             "uiState": {
                 "mode": 1,
-                "x": 12,
-                "y": 30,
+                "x": 14,
+                "y": 32,
                 "width": 1892,
                 "height": 1034
-            }
+            },
+            "backupPath": "/home/ff/.config/Code/Backups/22b5995cc1d9ea195db354d4237dd98b"
         }
     },
     "pickerWorkingDir": "/home/ff/dotfiles/dark/start_page/start_page",
