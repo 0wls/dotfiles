@@ -46,7 +46,11 @@ alias weather='curl -4 wttr.in/belgrade'
 alias studiob='mpv --volume 35 http://radio.studiob.rs:8004'
 alias beograd1='mpv --volume 35 http://rts.ipradio.rs:8002'
 alias naxirock='mpv --volume 35 http://naxidigital-rock128.streaming.rs:8180'
+<<<<<<< HEAD
 alias naxi80='mpv --volume 35 http://naxidigital-80s128.streaming.rs:8040'
+=======
+alias naxi80='mpv --volume 35 http://naxidigital128.kbcnet.rs:8040'
+>>>>>>> 196bef50bbc4cab47f12e973c79a7f59733529c2
 #WAN IP
 alias wan='curl ifconfig.co'
 
