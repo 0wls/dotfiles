@@ -57,7 +57,7 @@
         },
         "workbench.action.closeWindow": {
             "id": "workbench.action.closeWindow",
-            "label": "Ctrl+Shift+W",
+            "label": "Ctrl+W",
             "isNative": true
         },
         "workbench.action.closeFolder": {
@@ -441,28 +441,29 @@
         "openedWindows": [],
         "openedFolders": [],
         "lastActiveWindow": {
-            "workspacePath": "/home/ff/Documents/HeadFirst",
+            "folderPath": "/home/ff/Documents/HeadFirst",
+            "backupPath": "/home/ff/.config/Code/Backups/22b5995cc1d9ea195db354d4237dd98b",
             "uiState": {
                 "mode": 1,
                 "x": 14,
                 "y": 32,
                 "width": 1892,
                 "height": 1034
-            },
-            "backupPath": "/home/ff/.config/Code/Backups/22b5995cc1d9ea195db354d4237dd98b"
+            }
         }
     },
     "pickerWorkingDir": "/home/ff/dotfiles/dark/start_page/start_page",
     "openedPathsList": {
+        "workspaces": [
+            "/home/ff/Documents/HeadFirst",
+            "/home/ff/Documents/HeadFirst"
+        ],
         "files": [
             "/home/ff/dotfiles/dark/start_page/start_page/index.html",
             "/home/ff/.config/Code/User/snippets/javascript.json",
             "/home/ff/Documents/HeadFirst/1.html",
             "/home/ff/Documents/Web Bootcamp/boxes.css",
             "/home/ff/Documents/Web Bootcamp/boxes.html"
-        ],
-        "folders": [
-            "/home/ff/Documents/HeadFirst"
         ]
     },
     "telemetry.machineId": "506a00c0318adf66323e966032fb9c330f8101da265727b3e888495d4ef593b3",
