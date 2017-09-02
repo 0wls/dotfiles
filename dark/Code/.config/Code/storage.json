@@ -447,7 +447,7 @@
                 "mode": 1,
                 "x": 14,
                 "y": 32,
-                "width": 1892,
+                "width": 976,
                 "height": 1034
             }
         }
@@ -455,6 +455,7 @@
     "pickerWorkingDir": "/home/ff/dotfiles/dark/start_page/start_page",
     "openedPathsList": {
         "workspaces": [
+            "/home/ff/Documents/HeadFirst",
             "/home/ff/Documents/HeadFirst"
         ],
         "files": [

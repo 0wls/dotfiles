@@ -4,3 +4,4 @@ Local Storage
 Cookies
 *-shared.sock
 !.gitignore
+storage.json
