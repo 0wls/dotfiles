@@ -5,3 +5,4 @@ Cookies
 *-shared.sock
 !.gitignore
 storage.json
+workspaces.json
