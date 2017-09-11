@@ -8,8 +8,10 @@
 ;=====================================================
 
 [colors]
+;background = ${xrdb:color0:#222}
 background = #1f1f1f
 background-alt = #2c2c2c
+;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #a0a0a0
 primary = #ffb52a
@@ -19,16 +21,19 @@ button = #787878
 button-empty = #e4e4e4
 
 [bar/example]
+;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 18
 offset-x = 0%
 offset-y = 0%
+;radius = 6.0
 fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 1
+;line-size = 1
+line-color = #787878
 
 border-size = 0
 border-color = #00000000
@@ -40,21 +45,35 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = "Gohu GohuFont:pixelsize=11;1"
+;font-0 = fixed:pixelsize=9;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
-font-3 = MaterialIcons:size=12:antialias=false;2
-font-4 = FontAwesome:pixelsize=12:antialias=false;2
+font-3 = "FontAwesome:pixelsize=10:0"
 
 
 modules-left = bspwm
 modules-center = spotify
 modules-right = weather pkg volume date
 
+;tray-position = right
+;tray-padding = 2
+;tray-transparent = true
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
 
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
-
 
 [module/spotify]
 type = custom/script
@@ -71,72 +90,28 @@ format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 exec = ~/.config/polybar/weather
 
-
+; 
 [module/bspwm]
 type = internal/bspwm
-;inline-mode = true
-;pin-workspaces = true
 
-ws-icon-0 = I;
-ws-icon-1 = II;
-ws-icon-2 = III;
-ws-icon-3 = IV;
-ws-icon-4 = V;
-ws-icon-5 = VI;
-ws-icon-default = 
+label-focused = 
+label-focused-foreground = ${colors.button}
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
 
-format = <label-state> <label-mode>
+label-occupied = 
+label-occupied-padding = 2
+label-occupied-foreground = ${colors.button}
 
-; Available tokens:
-;   %name%
-; Default: %name%
-label-monitor = %name%
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
 
-; If any values for label-dimmed-N are defined, the workspace/mode
-; colors will get overridden with those values if the monitor is out of focus
-; To only override workspaces in a specific state, use:
-;   label-dimmed-focused
-;   label-dimmed-occupied
-;   label-dimmed-urgent
-;   label-dimmed-empty
+label-empty = 
+label-empty-foreground = ${colors.button-empty}
+label-empty-padding = 2
 
-;label-dimmed-foreground = #555
-;label-dimmed-focused-background = #f00
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-; Default: %icon%  %name%
-label-focused = %icon%
-label-focused-foreground = #ffffff
-label-focused-underline = #f4f4f4
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-; Default: %icon%  %name%
-label-occupied = %icon%
-
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-; Default: %icon%  %name%
-;label-urgent = %icon%
-;label-urgent-foreground = #000000
-;label-urgent-background = #bd2c40
-;label-urgent-underline = #9b0a20
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-; Default: %icon%  %name%
-label-empty = %icon%
-label-empty-foreground = #767676
 
 
 [module/mpd]
@@ -153,6 +128,7 @@ label-song-maxlen = 25
 label-song-ellipsis = true
 
 
+
 [module/date]
 type = internal/date
 interval = 5
@@ -166,7 +142,7 @@ time-alt = %H:%M:%S
 
 ;format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-
+format-underline = #0a6cf5
 
 ;label = %date% %time%
 label = %{F#666}%{F-} %date%  %{F#787878}%{F-} %time%
@@ -220,7 +196,7 @@ ramp-volume-foreground = #787878
 type = custom/script
 interval = 300
 format = <label>
-;format-underline = #dc322f
+format-underline = #dc322f
 label = "%output:0:30%"
 exec = .config/polybar/pkg.sh
 exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
