@@ -112,7 +112,8 @@ label-monitor = %name%
 label-focused = %icon%
 label-focused-foreground = #ffffff
 ;label-focused-underline = #f4f4f4
-label-focused-underline = #C3437F
+;label-focused-underline = #C3437F
+label-focused-underline = #CF6A4C
 
 ; Available tokens:
 ;   %name%

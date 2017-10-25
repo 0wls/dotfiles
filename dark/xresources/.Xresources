@@ -75,26 +75,17 @@ URxvt.colorUL: #ffc107
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
-! ------------------------------------------------------------------------------
-! Use extended color scheme
-!#rofi.color-enabled:                  true
-! Color scheme for normal row
-!#rofi.color-normal:                   argb:00000000,  #D8DEE9 , argb:00000000,  #D8DEE9 ,  #1B2B34
-! Color scheme for urgent row
-!#rofi.color-urgent:                   argb:00000000,  #F99157 , argb:00000000,  #F99157 ,  #1B2B34
-! Color scheme for active row
-!#rofi.color-active:                   argb:00000000,  #6699CC , argb:00000000,  #6699CC ,  #1B2B34
-! Color scheme window
-!#rofi.color-window:                   argb:ee222222,  #1f1f1f ,  #1f1f1f
-! Separator style (none, dash, solid)
-!#rofi.separator-style: none
-
-
-! ------------------------------------------------------------------------------
-! ROFI Color theme
+! Copyright: Florian KERUZORE
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #1f1f1f, #1f1f1f, argb:0000000
-rofi.color-normal: #1f1f1f, #ffffff, argb:0000000, #504e4e, #eee8d5
-rofi.color-active: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
-rofi.color-urgent: argb:0fdf6e3, #dc322f, argb:0eee8d5, argb:0dc322f, #fdf6e3
+rofi.color-window: #1f1f1f, #1f1f1f, #1f1f1f
+rofi.color-normal: #1f1f1f, #eee8d5, #1f1f1f, #504e4e, #1f1f1f
+rofi.color-active: #383C4A, #D3DAE3, #22242D, #D3DAE3, #1f1f1f
+rofi.color-urgent: #1f1f1f, #D3DAE3, #1f1f1f, #D3DAE3, #1f1f1f
+rofi.separator-style: none
+rofi.lines:             5
+rofi.hide-scrollbar: true
+
+
+
+

@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-scale '/home/ff/Pictures/binding-dark-1920x1080.png' 
+'feh' '--bg-scale' '/home/ff/Pictures/binding-dark-1920x1080.png' 
