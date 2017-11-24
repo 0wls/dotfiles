@@ -2,7 +2,7 @@
 # wm independent hotkeys
 #
 
-ctrl + alt + x	
+ctrl + alt + x
 	pkill -f 'x11grab'
 
 #Reboot
@@ -11,7 +11,7 @@ ctrl + alt + r
 
 #Shutdown
 ctrl + alt + s
-	shutdown -h now 
+	shutdown -h now
 
 # terminal emulator
 super + e

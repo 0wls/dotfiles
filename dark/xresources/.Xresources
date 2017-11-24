@@ -26,6 +26,8 @@ URxvt.underlineURLs: true
 URxvt.iconFile: /usr/share/icons/Menda-Circle/apps/48x48/apps/terminator.svg
 URxvt.colorUL: #ffc107
 
+
+xterm*font:  xft:Gohu GohuFont:size=11,xft:Inconsolata\ for\ Powerline:pixelsize=13
 !-------------------------------------------------------------------------------
 !!! THEME !!!
 !-------------------------------------------------------------------------------
