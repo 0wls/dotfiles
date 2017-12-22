@@ -5,6 +5,10 @@ dark/vim/.vim/dirs/backups
 dark/vim/.vim/dirs/tmp
 dark/vim/.vim/.netrwhist
 dark/Code/.config/Code/Cache
+dark/Code/.config/Code/Backups/
+dark/Code/.config/Code/CachedExtensions/
+dark/Code/.config/Code/logs/
+dark/Code/.config/Code/machineid
 light/vim/.vim/autoload
 light/vim/.vim/plugged
 light/vim/.vim/dirs
