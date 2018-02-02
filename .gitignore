@@ -9,6 +9,7 @@ dark/Code/.config/Code/Backups/
 dark/Code/.config/Code/CachedExtensions/
 dark/Code/.config/Code/logs/
 dark/Code/.config/Code/machineid
+dark/vscode/
 light/vim/.vim/autoload
 light/vim/.vim/plugged
 light/vim/.vim/dirs
