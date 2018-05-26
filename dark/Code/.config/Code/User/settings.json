@@ -15,5 +15,6 @@
     "code-runner.enableAppInsights": false,
     "window.zoomLevel": 0,
     "editor.renderControlCharacters": false,
-    "workbench.colorTheme": "Material Night Eighties"
+    "workbench.colorTheme": "Material Night Eighties",
+    "editor.minimap.enabled": false
 }
