@@ -21,10 +21,10 @@ set highlight-color             "#F4BF75" #0A
 set highlight-active-color      "#AA759F" #08
 
 set completion-highlight-fg     "#D0D0D0" #05
-set completion-highlight-bg     "#75B5AA" #0C
+set completion-highlight-bg     "#AA759F" #0C
 
 set completion-bg               "#D0D0D0" #05
-set completion-fg               "#75B5AA" #0C
+set completion-fg               "#AA759F" #0C
 
 set notification-bg             "#90A959" #0B
 set notification-fg             "#F5F5F5" #07
