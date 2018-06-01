@@ -7,12 +7,10 @@ ctrl + alt + x
 
 #Reboot
 ctrl + alt + r
-	shutdown -r now
-
+    systemctl reboot
 #Shutdown
 ctrl + alt + s
-	shutdown -h now
-
+    systemctl poweroff
 # terminal emulator
 super + e
 	urxvt
