@@ -57,12 +57,12 @@ type = internal/xwindow
 label = %title:0:30:...%
 
 
-[module/spotify]
-type = custom/script
-format-foreground = #1DB954
-exec = ~/.config/polybar/spotify.sh %artist% - %title%
-tail = true
-interval = 2
+;[module/spotify]
+;type = custom/script
+;format-foreground = #1DB954
+;exec = ~/.config/polybar/spotify.sh %artist% - %title%
+;tail = true
+;interval = 2
 
 [module/weather]
 type = custom/script
