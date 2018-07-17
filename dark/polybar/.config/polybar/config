@@ -175,7 +175,7 @@ format-prefix-foreground = ${colors.foreground-alt}
 
 
 ;label = %date% %time%
-label = %{F#666}%{F-} %date%  %{F#787878}%{F-} %time%
+label = %{F#666}%{F-} %date%  %{F#787878}%{F-} %time%
 
 ;[module/volume]
 ;type = internal/volume
