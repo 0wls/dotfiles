@@ -1,3 +1,3 @@
-# Home of dotfiles
+# Home of ol(d)otfiles
 
 ...more to be added soon...probably never...
